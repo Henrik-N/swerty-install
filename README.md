@@ -1,4 +1,4 @@
-# Swerty Installation script
+# Swerty Installation Script
 This is an install script for installing the Swerty keyboard layout on Linux.
 
 The Swerty keyboard layout was created by Johan E. Gustavsson, http://johanegustafsson.net/.
