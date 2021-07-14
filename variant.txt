@@ -1,0 +1,6 @@
+        <variant>
+          <configItem>
+            <name>swerty</name>
+            <description>Swerty</name>
+          <configItem>
+        </variant>
