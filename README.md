@@ -6,7 +6,7 @@ The Swerty keyboard layout was created by Johan E. Gustavsson, http://johanegust
 Note that this script is setting up the keybindings with XKB/Xorg, I'm not sure if it will work on Wayland. If you don't know what those things are you're most likely using Xorg.
 
 
-## Install instructions
+## Install Instructions
 
 You'll need to run the script as sudo as it's modifying protected files.
 
