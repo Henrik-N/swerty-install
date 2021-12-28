@@ -11,8 +11,7 @@ fi
 
 
 grep -q swerty /usr/share/X11/xkb/rules/evdev.xml
-if [ $? == 0 ]
-then
+if [ $? == 0 ] then
 	echo "Swerty is already listed as a variant in /usr/share/X11/xkb/rules/evdev.xml."
 else
 	# Get line number of the line the Swedish language list is set
@@ -23,8 +22,7 @@ else
 
 	# Find first <variantList> line after the swedish language tags
 	for num in $variantListLineNumbers; do
-		if (( $num > $lineNumberWithISO ))
-		then
+		if (( $num > $lineNumberWithISO )) then
 			# Add swerty variant after <variantList> block
 			sed -i "$num r ./variant.txt" /usr/share/X11/xkb/rules/evdev.xml
 			echo "Added entry for Swerty in  /usr/share/X11/xkb/rules/evdev.xml."
@@ -37,8 +35,7 @@ fi
 
 
 grep -q Swerty /usr/share/X11/xkb/rules/evdev.lst
-if [ $? == 0 ]
-then
+if [ $? == 0 ] then
 	echo "Swerty is already listed as a variant in /usr/share/X11/xkb/rules/evdev.lst."
 else
 	# Add variant to list in /usr/share/X11/xkb/rules/evdev.lst
